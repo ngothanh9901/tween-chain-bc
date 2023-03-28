@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "./interfaces/ICompanyFactory.sol";
 
-contract NFTReward is ERC721Upgradeable {
+contract NFTReward is Initializable, ERC721Upgradeable {
     using Counters for Counters.Counter;
 
     address public owner;
